@@ -1,6 +1,7 @@
 const addTodo = require("./commands/new");
 const listTodos = require("./commands/list");
 const markDone = require("./commands/done");
+const deleteTodo = require("./commands/delete");
 
 const args = process.argv.slice(2);
 
@@ -16,6 +17,9 @@ switch (command) {
     break;
   case "--done":
     markDone(args[1]);
+    break;
+  case "--delete":
+    deleteTodo(args[1]);
     break;
 
   default:
