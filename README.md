@@ -100,4 +100,4 @@ node app.js --delete <id>"
 - Node.js
 - PostgreSQL
 - pg (PostgreSQL client for Node.js)
-
+- dotenv
